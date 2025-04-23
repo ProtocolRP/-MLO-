@@ -1,0 +1,34 @@
+Ox inventory + 2 props bug
+If you have ox_inventory and use 2 props, it probably doesn't work for you. After using the first item, the inventory likely gets stuck.
+Please edit your ox_inventory so that you can use 2 props.
+
+Line 352: https://github.com/overextended/ox_inventory/blob/038b9fb6c8f31a2d29f7ceec0c4d0862da42ed90/client.lua#L352
+This bug: https://github.com/overextended/ox_inventory/issues/1586
+
+        
+
+
+
+
+
+
+
+		if item.propTwo then
+            if #item.prop > 1 then
+                item.prop = { item.prop[1], item.propTwo }
+            else
+                item.prop = { item.prop, item.propTwo }
+            end
+        end
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+ 
+Tested on the latest version of ox_inventory: v2.38.1.
