@@ -1,0 +1,8 @@
+["lean_cup"] = {"mp_player_intdrink", "loop_bottle", "Drink Lean Cup", AnimationOptions =
+   {   
+    Prop = 'bzzz_prop_drugs_lean_cup',
+       PropBone = 18905,
+       PropPlacement = {0.14, 0.03, 0.02, -100.0, 0.0, -10.0},
+       EmoteLoop = true,
+       EmoteMoving = true,
+   }},
