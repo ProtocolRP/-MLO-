@@ -1,0 +1,20 @@
+   ["blueprint"] = {"move_weapon@jerrycan@generic", "idle", "Carry blueprint", AnimationOptions =
+   {
+       Prop = 'bzzz_prop_blueprint_a',
+       PropBone = 24816,
+    	PropPlacement = {0.15, 0.08, -0.18, 0.0, 2.0, 1.0},
+	   SecondProp = 'ch_prop_ch_case_01a',
+       SecondPropBone = 28422,
+       SecondPropPlacement = {0.10, 0.05, -0.01, -5.0, -85.0, 86.0},
+       EmoteMoving = true,
+       EmoteLoop = true
+   }},
+   
+   ["blueprint2"] = {"amb@world_human_clipboard@male@idle_a", "idle_a", "Hold blueprint", AnimationOptions =
+   {
+    Prop = "bzzz_prop_blueprint_b",
+    PropBone = 60309,
+    PropPlacement = {0.11, -0.06, 0.23, 101.0, 15.0, -4.0},
+    EmoteLoop = true,
+    EmoteMoving = true,
+	}},
