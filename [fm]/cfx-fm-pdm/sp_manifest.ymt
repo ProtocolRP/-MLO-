@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CScenarioPointManifest>
+  <VersionNumber value="0" />
+  <RegionDefs>
+<Item type="CScenarioPointRegionDef">
+ <Name>compcache:/cfx-fm-cardealer/fmlscinterior</Name>
+   <AABB>
+    <min x="-266.560364" y="-1139.88977" z="8.148654" />
+    <max x="405.2953" y="-423.2211" z="178.1748" />
+   </AABB>
+  </Item>
+  </RegionDefs>
+</CScenarioPointManifest>
