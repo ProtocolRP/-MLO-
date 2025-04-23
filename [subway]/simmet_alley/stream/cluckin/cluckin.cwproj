@@ -1,0 +1,46 @@
+<CodeWalkerProject>
+  <Name>New CodeWalker Project</Name>
+  <Version value="1" />
+  <YmapFilenames>
+    <Item>cluckin_shell_milo_.ymap</Item>
+  </YmapFilenames>
+  <YtypFilenames>
+    <Item>chicken_glass.ytyp</Item>
+    <Item>cluckin.ytyp</Item>
+    <Item>cluckin_doorl.ytyp</Item>
+    <Item>cluckin_doorr.ytyp</Item>
+    <Item>cluckin_mainstuff.ytyp</Item>
+    <Item>cluckin_way.ytyp</Item>
+    <Item>km_cbdoor.ytyp</Item>
+    <Item>props_km.ytyp</Item>
+    <Item>tfrp_cluckinbell.ytyp</Item>
+  </YtypFilenames>
+  <YbnFilenames>
+    <Item>cluckin_col.ybn</Item>
+  </YbnFilenames>
+  <YndFilenames />
+  <YnvFilenames />
+  <TrainsFilenames />
+  <ScenarioFilenames />
+  <AudioRelFilenames />
+  <YdrFilenames>
+    <Item>chicken_glass.ydr</Item>
+    <Item>cluckin_doorl.ydr</Item>
+    <Item>cluckin_doorr.ydr</Item>
+    <Item>cluckin_mainoverlay.ydr</Item>
+    <Item>cluckin_mainstuff.ydr</Item>
+    <Item>cluckin_shell.ydr</Item>
+    <Item>cluckin_way.ydr</Item>
+    <Item>cuckin_facade.ydr</Item>
+    <Item>km_cbdoor.ydr</Item>
+    <Item>km_cbnotboardla.ydr</Item>
+    <Item>km_cbnotboardsa.ydr</Item>
+    <Item>km_cbnutboard.ydr</Item>
+  </YdrFilenames>
+  <YddFilenames />
+  <YftFilenames />
+  <YtdFilenames>
+    <Item>cluckin.ytd</Item>
+    <Item>km_propcb.ytd</Item>
+  </YtdFilenames>
+</CodeWalkerProject>
