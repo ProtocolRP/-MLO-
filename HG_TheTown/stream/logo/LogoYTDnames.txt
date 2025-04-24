@@ -1,0 +1,6 @@
+hg_thetown.ytd
+
+-hg_thetown_doorlogo (logo on host stand)
+-changeme (outdoor menustand prop next to front door)
+-thetownMenu (menus on the table)
+-prop_aframesign_01 (outdoor menustand prop next to front door)
