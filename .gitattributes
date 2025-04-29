@@ -1,0 +1,2 @@
+*.ydr filter=lfs diff=lfs merge=lfs -text
+*.ytd filter=lfs diff=lfs merge=lfs -text
