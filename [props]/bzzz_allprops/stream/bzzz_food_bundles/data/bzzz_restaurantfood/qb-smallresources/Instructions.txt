@@ -1,1 +1,0 @@
-https://github.com/Mrs-BzZz/food_coords/blob/main/qb-smallresources/bzzz_restaurantfood.lua
