@@ -1,0 +1,8 @@
+There are 2 new animations in the folder:
+
+AnimDict: bzzz_fastfood_anim1
+AnimName: anim1
+
+
+AnimDict: bzzz_fastfood_anim2
+AnimName: anim2

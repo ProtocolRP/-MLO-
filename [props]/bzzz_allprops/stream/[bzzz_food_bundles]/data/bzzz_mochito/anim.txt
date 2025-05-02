@@ -1,0 +1,8 @@
+["mochito"] = {"mp_player_intdrink", "loop_bottle", "Mochito", AnimationOptions =
+   {   
+    Prop = 'bzzz_drink_mochito',
+       PropBone = 18905,
+       PropPlacement = {0.02, -0.09, 0.1, 96.0, 13.0, 138.0},
+       EmoteLoop = true,
+       EmoteMoving = true,
+   }},
