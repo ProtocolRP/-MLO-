@@ -1,0 +1,9 @@
+For dpemotes: 
+
+   ["eat_fish"] = {"mp_player_inteat@burger", "mp_player_int_eat_burger", "Eat fish", AnimationOptions =
+   {
+      Prop = 'bzzz_animal_fish002',
+      PropBone = 18905,
+      PropPlacement = {0.13, 0.04, 0.03, 24.0, 2.0, 168.0},
+      EmoteMoving = true,
+   }},
