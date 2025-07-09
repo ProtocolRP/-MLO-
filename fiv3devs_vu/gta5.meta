@@ -1146,9 +1146,9 @@
 	  <filename>common:/data/levels/gta5/mapzones.xml</filename>
 	  <fileType>MAPZONES_FILE</fileType>
 	</Item>
-	<Item>
-	  <filename>COMMON:/data/levels/gta5/heightmap.dat</filename>
-	  <fileType>WORLD_HEIGHTMAP_FILE</fileType>
+		<Item>  	
+		<filename>resources:/cfx-nteam-river/heightmap.dat</filename>
+	  	<fileType>WORLD_HEIGHTMAP_FILE</fileType>
 	</Item>
 	<Item>
 	  <filename>COMMON:/data/levels/gta5/waterheight.dat</filename>

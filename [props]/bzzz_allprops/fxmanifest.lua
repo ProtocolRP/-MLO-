@@ -77,3 +77,4 @@ data_file 'DLC_ITYP_REQUEST' 'stream/bzzz_food_bundles/discord/bzzz_xmas23_conve
 data_file 'DLC_ITYP_REQUEST' 'stream/bzzz_food_bundles/discord/italy_food/bzzz_italy_food_rpack.ytyp'
 data_file 'DLC_ITYP_REQUEST' 'stream/bzzz_photoboxes/bzzz_photoboxes.ytyp'
 data_file 'DLC_ITYP_REQUEST' 'stream/bzzz_casino_cake/bzzz_prop_cake_casino001.ytyp'
+data_file 'DLC_ITYP_REQUEST' 'stream/bzzz_wooden_market/bzzz_prop_wooden_market.ytyp'
