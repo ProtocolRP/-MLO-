@@ -1,0 +1,5 @@
+-=IMPORTANT=-
+
+**Back up old YDR in case you decide to go back to using it!**
+
+I recommend zipping it with winrar or 7-zip.
