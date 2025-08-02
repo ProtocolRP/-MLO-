@@ -1,0 +1,30 @@
+<CodeWalkerProject>
+  <Name>New CodeWalker Project</Name>
+  <Version value="1" />
+  <YmapFilenames>
+    <Item>patoche_plasmatron_map3\patoche_plasmatron_map3_milo_.ymap</Item>
+    <Item>patoche_plasmatron_map1\patoche_plasmatron_map1_milo_.ymap</Item>
+    <Item>patoche_plamatron_map2\patoche_plasmatron_map2_milo_.ymap</Item>
+    <Item>patoche_plasmatron_lobby\patoche_plasmatron_lobby_milo_.ymap</Item>
+    <Item>patoche_plasmatron_map4\patoche_plasmatron_map4_milo_.ymap</Item>
+    <Item>patoche_plasmatron_lobby\poseexte.ymap</Item>
+  </YmapFilenames>
+  <YtypFilenames>
+    <Item>patoche_plasmatron_map3\patoche_plasmatron_map3.ytyp</Item>
+    <Item>patoche_plasmatron_props\patoche_plasmatron_props.ytyp</Item>
+    <Item>patoche_plasmatron_map1\patoche_plasmatron_map1.ytyp</Item>
+    <Item>patoche_plamatron_map2\patoche_plasmatron_map2.ytyp</Item>
+    <Item>patoche_plasmatron_lobby\patoche_plasmatron_lobby.ytyp</Item>
+    <Item>patoche_plasmatron_map4\patoche_plasmatron_map4.ytyp</Item>
+  </YtypFilenames>
+  <YbnFilenames />
+  <YndFilenames />
+  <YnvFilenames />
+  <TrainsFilenames />
+  <ScenarioFilenames />
+  <AudioRelFilenames />
+  <YdrFilenames />
+  <YddFilenames />
+  <YftFilenames />
+  <YtdFilenames />
+</CodeWalkerProject>
