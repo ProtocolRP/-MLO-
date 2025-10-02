@@ -1,0 +1,26 @@
+<CodeWalkerProject>
+  <Name>New CodeWalker Project</Name>
+  <Version value="1" />
+  <YmapFilenames>
+    <Item>fivem-mlos-clubhouse_3.ymap</Item>
+    <Item>hei_vb_33_strm_0.ymap</Item>
+    <Item>hei_vb_34_critical_0.ymap</Item>
+    <Item>hei_vb_rd_strm_1.ymap</Item>
+    <Item>map1.ymap</Item>
+    <Item>map2.ymap</Item>
+    <Item>mlo_clubhouse_vespucci_milo_.ymap</Item>
+    <Item>vb_33_dayprops.ymap</Item>
+    <Item>vb_33_strm_0.ymap</Item>
+    <Item>vb_34_critical_0.ymap</Item>
+    <Item>vb_occl_00.ymap</Item>
+  </YmapFilenames>
+  <YtypFilenames>
+    <Item>mlo_clubhouse_vespucci.ytyp</Item>
+  </YtypFilenames>
+  <YbnFilenames />
+  <YndFilenames />
+  <YnvFilenames />
+  <TrainsFilenames />
+  <ScenarioFilenames />
+  <AudioRelFilenames />
+</CodeWalkerProject>
