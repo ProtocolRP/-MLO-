@@ -1,0 +1,9 @@
+Are the props not working?
+Add the file "bzzz_cosmetics_ymap_test.ymap" to any stream folder on your server that is started and restart the server.
+
+Coords: 
+x = 246
+y = -263
+z = 68
+
+If the props are not spawned at these coordinates, you are starting the wrong resource or ytyp file.
