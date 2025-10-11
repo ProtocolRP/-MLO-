@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyes</title>
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/line-awesome@1.3.0/dist/line-awesome/css/line-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div id="app" v-if="ui">
+    <!-- Modern Loading Overlay -->
+    <div v-if="isLoading" class="loading-overlay">
+        <div class="loading-content">
+                         <div class="loading-spinner-container">
+                 <div class="loading-spinner"></div>
+             </div>
+                         <div class="loading-text">{{ loadingText }}</div>
+             <div class="loading-subtext">Processing your request...</div>
+        </div>
+    </div>
+
+    <!-- Shop Container -->
+    <div class="shop-container" :class="{ loading: isLoading }">
+        <!-- Header -->
+        <div class="shop-header">
+            <h1 class="shop-title">
+                <i class="fas fa-store"></i>
+                {{ shopName }}
+            </h1>
+            <div class="header-actions">
+                <!-- Cart Button -->
+                <div class="cart-button" @click="toggleCart" :class="{ active: showCart }">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" v-if="cartItems.length > 0">{{ cartItems.length }}</span>
+                    <span class="cart-label">Cart</span>
+                </div>
+                <!-- Player Balance -->
+                <div class="player-balance">
+                    <i class="fas fa-coins"></i>
+                    <span>{{ playerBalance }}</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="shop-content">
+            <!-- Cart Panel Overlay -->
+            <div v-if="showCart" class="cart-overlay" @click="closeCart">
+                <div class="cart-panel" @click.stop>
+                    <div class="cart-header">
+                        <h2>
+                            <i class="fas fa-shopping-cart"></i>
+                            Shopping Cart
+                        </h2>
+                        <button class="close-cart" @click="closeCart">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="cart-content">
+                        <div v-if="cartItems.length === 0" class="empty-cart">
+                            <div class="empty-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="empty-cart-content">
+                                <h3 class="empty-title">Your Cart is Empty</h3>
+                                <p class="empty-subtitle">Add some items to get started</p>
+                                <div class="empty-hint">
+                                    <i class="fas fa-mouse"></i>
+                                    <span>Browse items on the left to add them to your cart</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div v-else class="cart-items">
+                            <div v-for="cartItem in cartItems" :key="cartItem.id" class="cart-item">
+                                <div class="cart-item-image">
+                                    <img :src="cartItem.image" :alt="cartItem.name" />
+                                </div>
+                                <div class="cart-item-info">
+                                    <div class="cart-item-name">{{ cartItem.name }}</div>
+                                    <div class="cart-item-type">{{ cartItem.type }}</div>
+                                    <div class="cart-item-price">
+                                        <i class="fas fa-dollar-sign"></i>
+                                        <span>{{ cartItem.price.toLocaleString() }}</span>
+                                    </div>
+                                </div>
+                                <div class="cart-item-controls">
+                                    <div class="quantity-controls">
+                                        <button @click="decreaseQuantity(cartItem)" class="qty-btn">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <span class="quantity">{{ cartItem.quantity }}</span>
+                                        <button @click="increaseQuantity(cartItem)" class="qty-btn">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                        <button @click="removeFromCart(cartItem)" class="remove-item">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
+                                    <div class="item-total">
+                                        <i class="fas fa-calculator"></i>
+                                        <span>{{ (cartItem.price * cartItem.quantity).toLocaleString() }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div v-if="cartItems.length > 0" class="cart-footer">
+                        <div class="cart-total">
+                            <div class="total-label">Total:</div>
+                            <div class="total-amount">
+                                <i class="fas fa-dollar-sign"></i>
+                                {{ cartTotal.toLocaleString() }}
+                            </div>
+                        </div>
+                        <div class="cart-actions">
+                            <button @click="clearCart" class="clear-cart-btn">
+                                <i class="fas fa-trash"></i>
+                                Clear Cart
+                            </button>
+                            <div class="payment-section">
+                                <div class="payment-dropdown" :class="{ active: showPaymentDropdown }">
+                                    <div class="payment-options">
+                                        <button @click="selectPaymentMethod('cash')" 
+                                               :class="['payment-option', { active: selectedPaymentMethod === 'cash' }]">
+                                            <i class="fas fa-money-bill-wave"></i>
+                                            <div class="payment-info">
+                                                <span class="payment-label">CASH</span>
+                                                <span class="payment-amount">${{ playerBalance.toLocaleString() }}</span>
+                                            </div>
+                                        </button>
+                                        <button @click="selectPaymentMethod('bank')" 
+                                               :class="['payment-option', { active: selectedPaymentMethod === 'bank' }]">
+                                            <i class="fas fa-credit-card"></i>
+                                            <div class="payment-info">
+                                                <span class="payment-label">BANK</span>
+                                                <span class="payment-amount">${{ playerBankBalance.toLocaleString() }}</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <button @click="togglePaymentDropdown" 
+                                       :disabled="playerBalance < cartTotal && playerBankBalance < cartTotal" 
+                                       class="buy-all-btn"
+                                       :class="{ 'dropdown-active': showPaymentDropdown }">
+                                    <i class="fas fa-credit-card"></i>
+                                    <span>Buy All ({{ selectedPaymentMethod.toUpperCase() }})</span>
+                                    <i class="fas fa-chevron-up"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left Panel - Items List -->
+            <div class="items-panel">
+                <div class="panel-header">
+                    <h2>Available Items</h2>
+                    <div class="filter-controls">
+                        <div class="search-container">
+                            <div class="search-input-wrapper">
+                                <i class="fas fa-search search-icon"></i>
+                                <input 
+                                    type="text" 
+                                    v-model="searchQuery"
+                                    @input="onSearchInput($event)"
+                                    @keyup="onSearchInput($event)"
+                                    placeholder="Search items..."
+                                    class="search-input"
+                                    autocomplete="off"
+                                />
+                                <button 
+                                    v-if="searchQuery" 
+                                    @click="clearSearch" 
+                                    class="clear-search-btn"
+                                >
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="category-filter">
+                            <button 
+                                v-for="category in categories" 
+                                :key="category"
+                                @click="selectedCategory = category"
+                                :class="['category-btn', { active: selectedCategory === category }]"
+                            >
+                                {{ category }}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="items-list">
+                    <!-- Search Results Info -->
+                    <div v-if="searchQuery" class="search-results-info">
+                        <div class="results-text">
+                            <i class="fas fa-search"></i>
+                            <span v-if="filteredItems.length > 0">
+                                Found {{ filteredItems.length }} item{{ filteredItems.length > 1 ? 's' : '' }} for "{{ searchQuery }}"
+                            </span>
+                            <span v-else>
+                                No items found for "{{ searchQuery }}"
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div 
+                        v-for="item in filteredItems" 
+                        :key="item.id"
+                        @click="selectItem(item)"
+                        :class="['item-card', `rarity-${item.rarity}`, { selected: selectedItem && selectedItem.id === item.id }]"
+                    >
+                        <div class="item-image">
+                            <img :src="item.image" :alt="item.name" />
+                        </div>
+                        <div class="item-info">
+                            <div class="item-name">{{ item.name }}</div>
+                            <div class="item-type">{{ item.type }}</div>
+                            <div class="item-stats" v-if="item.stats">
+                                <span v-if="item.stats.armor" class="stat">
+                                    <i class="fas fa-shield-alt"></i> {{ item.stats.armor }}
+                                </span>
+                                <span v-if="item.stats.damage" class="stat">
+                                    <i class="fas fa-crosshairs"></i> {{ item.stats.damage }}
+                                </span>
+                                <span v-if="item.stats.rpm" class="stat">
+                                    <i class="fas fa-tachometer-alt"></i> {{ item.stats.rpm }}
+                                </span>
+                                <span v-if="item.stats.magazine" class="stat">
+                                    <i class="fas fa-bullets"></i> {{ item.stats.magazine }}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="item-actions">
+                            <div class="item-price">
+                                <div class="price-tag">
+                                    <span class="currency">🎃</span>
+                                    <span class="price">{{ item.price.toLocaleString() }}</span>
+                                </div>
+                                <div class="rarity-indicator" :class="`rarity-${item.rarity}`">
+                                    {{ item.rarity.toUpperCase() }}
+                                </div>
+                            </div>
+                            <button @click.stop="addToCart(item)" class="add-to-cart-btn" :disabled="isInCart(item)">
+                                <i v-if="isInCart(item)" class="fas fa-check"></i>
+                                <i v-else class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel - Item Details -->
+            <div class="details-panel">
+                <div v-if="selectedItem" class="item-details">
+                    <div class="detail-header">
+                        <div class="detail-title">
+                            <h2>{{ selectedItem.name }}</h2>
+                            <p class="detail-subtitle">{{ selectedItem.type }}</p>
+                        </div>
+                        <div class="detail-level" v-if="selectedItem.level">
+                            <i :class="getLevelIcon(selectedItem.level).icon + ' level-icon ' + getLevelIcon(selectedItem.level).class"></i>
+                            <span>{{ getLevelTitle(selectedItem.level) }} {{ selectedItem.level }}</span>
+                        </div>
+                    </div>
+
+                    <div class="detail-main-stat" v-if="selectedItem.mainStat">
+                        <div class="main-stat-header">
+                            <div class="main-stat-label">
+                                <i v-if="selectedItem.mainStat.icon" :class="selectedItem.mainStat.icon"></i>
+                                {{ selectedItem.mainStat.label }}
+                            </div>
+                        </div>
+                        <div class="main-stat-value">
+                            {{ selectedItem.mainStat.value }}
+                            <span v-if="selectedItem.mainStat.bonus" class="stat-bonus">
+                                +{{ selectedItem.mainStat.bonus }}
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="detail-attributes" v-if="selectedItem.attributes">
+                        <h3>Attributes</h3>
+                        <div class="attributes-grid">
+                            <div v-for="attr in selectedItem.attributes" :key="attr.name" class="attribute-card">
+                                <div class="attr-progress-ring">
+                                    <svg class="progress-circle" width="64" height="64">
+                                        <circle
+                                            class="progress-ring-background"
+                                            stroke="rgba(255, 255, 255, 0.1)"
+                                            stroke-width="2.5"
+                                            fill="transparent"
+                                            r="28"
+                                            cx="32"
+                                            cy="32"/>
+                                        <circle
+                                            class="progress-ring-fill"
+                                            :stroke="getAttributeColor(attr.name)"
+                                            stroke-width="2.5"
+                                            fill="transparent"
+                                            r="28"
+                                            cx="32"
+                                            cy="32"
+                                            :stroke-dasharray="getProgressDashArray(attr.value)"
+                                            :stroke-dashoffset="getProgressOffset(attr.value)"
+                                            stroke-linecap="round"/>
+                                    </svg>
+                                    <div class="attr-icon">
+                                        <i :class="getAttributeIcon(attr.name)"></i>
+                                    </div>
+                                    <div class="attr-percentage">{{ getAttributePercentage(attr.value) }}</div>
+                                </div>
+                                <div class="attr-info">
+                                    <div class="attr-name">{{ attr.name }}</div>
+                                    <div class="attr-value">+{{ attr.value }}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-description" v-if="selectedItem.description">
+                        <div class="description-header">
+                            <h3>
+                                <i class="fas fa-info-circle"></i>
+                                Intelligence Brief
+                            </h3>
+                            <div class="classification-tag">CLASSIFIED</div>
+                        </div>
+                        <div class="description-content">
+                            <div class="description-text">{{ selectedItem.description }}</div>
+                            <div class="description-footer">
+                                <div class="agent-id">Agent ID: SHD-{{ selectedItem.id.toString().padStart(4, '0') }}</div>
+                                <div class="clearance-level">Security Level: {{ selectedItem.rarity.toUpperCase() }}</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-sell-price" v-if="selectedItem.sellPrice">
+                        <div class="sell-label">Sell Price:</div>
+                        <div class="sell-value">{{ selectedItem.sellPrice }}</div>
+                    </div>
+                </div>
+
+                <div v-else class="no-selection">
+                    <i class="fas fa-mouse-pointer"></i>
+                    <p>Select an item to view details</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Controls -->
+        <div class="shop-controls">
+            <div class="control-left">
+                <div class="control-hint">
+                    <kbd>E</kbd>
+                    <span>Exit</span>
+                </div>
+                <div class="control-hint">
+                    <kbd>G</kbd>
+                    <span>Compare Mode</span>
+                </div>
+                <div class="control-hint">
+                    <kbd>C</kbd>
+                    <span>Cart</span>
+                </div>
+            </div>
+            <div class="control-right">
+                <button 
+                    v-if="selectedItem"
+                    @click="addToCart(selectedItem)"
+                    :disabled="isInCart(selectedItem)"
+                    class="add-cart-button"
+                >
+                    <i v-if="isInCart(selectedItem)" class="fas fa-check"></i>
+                    <i v-else class="fas fa-cart-plus"></i>
+                    {{ isInCart(selectedItem) ? 'In Cart' : 'Add to Cart' }}
+                </button>
+                <button 
+                    v-if="selectedItem"
+                    @click="buyItem"
+                    :disabled="playerBalance < selectedItem.price"
+                    class="buy-button"
+                >
+                    <i class="fas fa-shopping-cart"></i>
+                    Buy Now ({{ selectedItem.price }})
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.min.js"></script>
+<script src="./vue.js"></script>
+</body>
+
+</html>
