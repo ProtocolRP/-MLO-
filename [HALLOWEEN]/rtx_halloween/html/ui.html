@@ -1,0 +1,100 @@
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.2.0/css/pro.min.css">
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="howler.core.js"></script>
+	<script type="module" crossorigin src="gizmoapi.js"></script>	
+</head>
+
+<body>
+	<div class="full-screen">			
+		<div class="infonotify-container" id="infonotifyshow">	
+			<div class="infonotifytext">Text</div>
+		</div>	
+		<div class="halloweenposs-container" id="halloweenpossshow">
+			<div id="root"></div>						
+			<div class="halloweenpossinfosettings">
+				<img class="closehalloweendecoration" src="img/close.png" style="width:25px;height:25px" alt="closehalloweendecoration"/>
+				<div class="poscreatormaintext">
+					<div class="poscreatortext">HALLOWEEN PLACER</div>
+				</div>					
+				<div class="posspacemaintext">
+					<div class="posspacetext">Space:</div>
+				</div>					
+				<div class="posspacebuttons">
+					<button class="buttontypespace active" style="active" id="spacebuttonworld">World</button>
+					<button class="buttontypespace" id="spacebuttonlocal">Local</button>
+				</div>	
+				<div class="posmodemaintext">
+					<div class="posmodetext">Mode:</div>
+				</div>		
+				<div class="posmodebuttons">
+					<button class="buttontypemode active" style="active" id="posmoretranslate">Translate</button>
+					<button class="buttontypemode" id="posmorerotation">Rotate</button>
+				</div>
+				<div class="poscamerasettingsmaintext">
+					<div class="poscamerasettingstext">Camera Settings</div>
+				</div>	
+				<div class="poscamerasettingsspeedmaintext">
+					<div class="poscamerasettingsspeedtext">Camera Speed:</div>
+				</div>		
+
+				<input type="range" min="1" max="20" value="10" class="cameraspeed" id="cameraspeeddata" onchange="cameraspeedchange(this)">					
+				<div class="poscamerasettingslookxspeedmaintext">
+					<div class="poscamerasettingslookxspeedtext">Look Speed X:</div>
+				</div>	
+				<input type="range" min="1" max="20" value="10" class="lookspeedx" id="lookspeedxdata" onchange="lookspeedxchange(this)">
+				<div class="poscamerasettingslookyspeedmaintext">
+					<div class="poscamerasettingslookyspeedtext">Look Speed Y:</div>
+				</div>	
+				<input type="range" min="1" max="20" value="10" class="lookspeedy" id="lookspeedydata" onchange="lookspeedychange(this)">
+				<div class="posmovementsettingsmaintext">
+					<div class="posmovementsettingstext">Movement Settings</div>
+				</div>	
+				<div class="posmovementsettingstranslatemaintext">
+					<div class="posmovementsettingstranslatetext">Translate Snap</div>
+				</div>			
+				<input type="range" min="1" max="10" value="1" class="translatesnap" id="translatesnapdata" onchange="translatesnapchange(this)">
+				<div class="posmovementsettingsrotationmaintext">
+					<div class="posmovementsettingsrotationtext">Rotation Snap</div>
+				</div>	
+				<input type="range" min="1" max="10" value="1" class="rotationsnap" id="rotationsnapdata" onchange="rotationsnapchange(this)">	
+				<div class="poshalloweenposypedatamaintext">
+					<div class="poshalloweenposypedatatext">After pressing the place button, the selection is irreversible and the object can never be manipulated again. You can remove it via /removedecoration command</div>
+				</div>	
+				<div class="createhalloweenposbutton">PLACE</div>
+			</div>			
+		</div>	
+		<div class="halloweenprogressbar-container" id="halloweenprogressbarshow">
+			<div class="halloweenprogressbartext">Text</div>
+			<div class="halloweenprogressbarmaincontainer">
+				<div class="halloweenprogressbarmaincontainerdata"></div>
+			</div>		
+		</div>		
+		<div class="halloweencurving-container" id="halloweencurvingshow">	
+			<img class="closehalloweencurving" src="img/close.png" style="width:25px;height:25px" alt="closehalloweencurving"/>
+			<div class="halloowencurvingmaintext">PUMPKIN CARVING</div>
+			<div class="halloowencurvingtext">SELECT CARVING TYPE</div>
+			<div class="pumpkintype1"> 	
+				<img src="img/pumpkin_1.png">
+				<div class="pumpkintype1text">Pumpkin 1</div>
+				<div class="pumpkintype1select">Select</div>	
+			</div>	
+			<div class="pumpkintype2"> 	
+				<img src="img/pumpkin_2.png">
+				<div class="pumpkintype2text">Pumpkin 2</div>
+				<div class="pumpkintype2select">Select</div>	
+			</div>	
+			<div class="pumpkintype3"> 	
+				<img src="img/pumpkin_3.png">
+				<div class="pumpkintype3text">Pumpkin 3</div>
+				<div class="pumpkintype3select">Select</div>	
+			</div>				
+		</div>			
+	</div>
+	
+	<script src="scripts.js" type="text/javascript"></script>
+	<script src="debounce.min.js" type="text/javascript"></script>
+</body>
