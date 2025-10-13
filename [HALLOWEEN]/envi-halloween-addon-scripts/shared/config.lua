@@ -10,7 +10,7 @@ Config.Stalker = {
     SpawnDistance = -30.0, -- Distance behind the player to spawn (should be a negative number to spawn behind)
 
     -- NEW
-    IgnoredGroups = {'police', 'ambulance', 'ballas'},   -- Ignore Jobs/Gangs
+    IgnoredGroups = {'sasp', 'lspd', 'ambulance', 'ballas'},   -- Ignore Jobs/Gangs
     SpawnInterval = 20, -- Minimum time between spawns (in minutes)
 }
 
