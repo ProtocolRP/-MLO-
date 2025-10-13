@@ -1,0 +1,3 @@
+Copy the "breakable" ytyp file inside the stream folder if you want breakable glass
+
+Copy the "unbreakable" ytyp file inside the stream folder if you want unbreakable glass
