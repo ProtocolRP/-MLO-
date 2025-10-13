@@ -10,7 +10,6 @@ data_file 'TIMECYCLEMOD_FILE' 'kiiya_timecycle.xml'
 data_file 'AUDIO_GAMEDATA' 'lapuerta_game.dat'
 
 client_script 'client.lua'
-client_script 'sceanario.lua'
 
 files {
   'sp_manifest.ymt',

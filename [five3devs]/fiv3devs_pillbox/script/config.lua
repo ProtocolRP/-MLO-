@@ -37,8 +37,8 @@ Config.EnabledUnderground = true -- enable or disable the elevator's underground
 Config.EnabledOffices = true
 Config.EnableJobs = false -- enable job restrictions for ESX or QBCore
 Config.RestrictedFloors = { -- which floors to restric and for which jobs (names for floors are: lower, main, offices, roof, er, rec)
-    ["lower"] = {'ambulance', 'police'},
-    ["offices"] = {'ambulance', 'police'},
+    ["lower"] = {'ambulance', 'sasp', 'lspd'},
+    ["offices"] = {'ambulance', 'sasp', 'lspd'},
 }
 Config.DisabledTextSubject = 'Sorry!' -- in case Config.EnableJobs is set to true, this is the message that will appear for players trying to access that floor. 
 Config.DisabledText = 'This floor is currently unavailable.'
