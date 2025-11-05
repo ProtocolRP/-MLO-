@@ -1,0 +1,8 @@
+Thank you by your purchase!
+
+If you want change the interior for White Theme, you need make it:
+You should comment out line 5 and remove the comments from line 6.
+
+The "door_colors" folder has the black and white doors version, if you want to use the white theme, I recommend you go to the door_colors > white folder, copy them and replace them in the stream folder.
+
+If you want use the black version again, make the same but with the black version.
