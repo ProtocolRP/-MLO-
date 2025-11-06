@@ -17,7 +17,7 @@ Config.Text = '[~b~E~w~] Lay'
 Config.StopKey = 73 -- key to stand up
 
 -- MRI and X-RAY Settings
-Config.EnableMRI = false -- enable the MRI and X-RAY machine
+Config.EnableMRI = true -- enable the MRI and X-RAY machine
 Config.OxTextLayMri = 'Lay Down'
 Config.OxTextStartMri = 'Start MRI'
 Config.OxTextStartXray = 'Start XRay'
