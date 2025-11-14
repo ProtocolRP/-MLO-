@@ -1,0 +1,26 @@
+---
+How to Customize the Logo in Redbrick Coffee House Map
+
+To customize the logo in your map, follow these easy steps:
+
+Open the "aura-coffehouse.ytd" file in your map resources.
+
+Use OpenIV to open the "aura-coffehouse.ytd" file.
+Enable "Edit Mode" in OpenIV.
+
+Find "aura-logo.dds" inside "aura-coffehouse.ytd".
+
+Right-click "aura-logo.dds" and select "Export".
+Save it as a .dds file on your computer.
+
+Open the .dds file in an image editor like Photoshop or GIMP.
+Replace the photo with your own image and save it.
+Your file must have an even number of pixels, so you can make it 512x512 pixels.
+
+In OpenIV, right-click "aura-logo.dds" and select "Replace".
+Choose your edited file.
+
+Click "Save" in OpenIV.
+
+Restart your server in FiveM to see the updated photo.
+---
