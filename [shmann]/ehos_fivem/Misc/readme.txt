@@ -1,0 +1,155 @@
+If you need any help, please contact me on my discord linked below.
+
+If you need to make changes for your own Server on the encryted tebex Version, please contact me to get an open Version.
+
+
+Archetype Hashes:
+shmann_ehos_resbed01 3896729515
+shmann_ehos_bed01 3683737105
+shmann_ehos_resbed02 3369935071
+shmann_ehos_bed02 3714605503
+shmann_ehos_bed03 1866859900
+shmann_ehos_resbed03 3150350002
+shmann_ehos_couch01 262848636
+shmann_ehos_bed05 2430322855
+shmann_ehos_bed04 2115019537
+shmann_ehos_couch02 241286634
+
+Door Hashes:
+shmann_ehos_door01 3757841899 X:-672,2815 Y:314,0816 Z:82,08412
+shmann_ehos_door01 3757841520 X:-674,4489 Y:314,2712 Z:82,08412
+shmann_ehos_door01 3757838633 X:-681,2021 Y:314,8621 Z:82,08412
+shmann_ehos_door01 3757838868 X:-679,0488 Y:314,6737 Z:82,08412
+v_ilev_cor_firedoor 770782538 X:-670,0551 Y:329,5765 Z:83,11162
+v_ilev_cor_firedoor 770782776 X:-672,3508 Y:329,7774 Z:83,11162
+shmann_ehos_door03 2352397784 X:-667,7435 Y:336,2456 Z:82,0808
+shmann_ehos_door03 2352397501 X:-666,2958 Y:334,5201 Z:82,0808
+v_ilev_cor_firedoorwide2 3819444710 X:-682,7215 Y:330,7127 Z:83,10584
+shmann_ehos_door03 2352368800 X:-690,3259 Y:315,656 Z:82,07996
+shmann_ehos_door03 2352369077 X:-688,08 Y:315,4595 Z:82,07996
+shmann_ehos_door03 2352366544 X:-665,3898 Y:313,4748 Z:82,07865
+shmann_ehos_door03 2352366364 X:-663,1434 Y:313,2783 Z:82,07865
+v_ilev_cor_firedoorwide 2640982114 X:-679,2985 Y:330,4246 Z:83,1053
+shmann_ehos_door02 2117937494 X:-685,2524 Y:319,305 Z:82,08257
+shmann_ehos_door02 2117938736 X:-685,4826 Y:316,6739 Z:82,08257
+shmann_ehos_door02 2117936869 X:-667,4783 Y:317,7504 Z:82,08066
+shmann_ehos_door02 2117935497 X:-667,7084 Y:315,1203 Z:82,08066
+v_ilev_cor_firedoor 770771113 X:-672,2709 Y:329,0526 Z:78,14439
+v_ilev_cor_firedoor 770771288 X:-674,5616 Y:329,253 Z:78,14439
+v_ilev_cor_firedoor 770770626 X:-677,859 Y:329,4796 Z:78,13297
+v_ilev_cor_firedoor 770770908 X:-680,1495 Y:329,68 Z:78,13297
+v_ilev_cor_firedoorwide2 3819448087 X:-682,7211 Y:330,7175 Z:78,15346
+shmann_ehos_gdoor1 363719794 X:-698,7226 Y:318,5901 Z:84,02507
+shmann_ehos_gdoor1 363595138 X:-654,3747 Y:314,7209 Z:84,02535
+v_ilev_cor_firedoorwide2 3819445226 X:-682,7188 Y:330,7222 Z:88,04398
+v_ilev_cor_firedoor 770820572 X:-655,9158 Y:316,6891 Z:88,0278
+v_ilev_cor_firedoor 770821863 X:-655,7143 Y:318,9923 Z:88,0278
+v_ilev_cor_firedoor 770782607 X:-672,9544 Y:330,3863 Z:88,03539
+v_ilev_cor_firedoor 770782561 X:-672,7534 Y:332,6843 Z:88,03539
+v_ilev_cor_firedoor 770756068 X:-654,8489 Y:328,8017 Z:88,03934
+v_ilev_cor_firedoor 770755773 X:-654,6479 Y:331,0985 Z:88,03934
+v_ilev_cor_firedoorwide2 3819445227 X:-687,5308 Y:331,1068 Z:92,77419
+v_ilev_cor_firedoor 770755512 X:-654,6967 Y:327,7363 Z:92,77473
+v_ilev_cor_firedoor 770782394 X:-656,9911 Y:327,937 Z:92,77473
+v_ilev_cor_firedoor 770819042 X:-679,9146 Y:323,7287 Z:92,76369
+v_ilev_cor_firedoor 770818291 X:-682,2072 Y:323,9293 Z:92,76369
+v_ilev_cor_firedoor 770716966 X:-654,3013 Y:324,3534 Z:92,76771
+v_ilev_cor_firedoor 770820797 X:-656,5935 Y:324,5501 Z:92,76771
+v_ilev_cor_doorlift01 4280219977 X:-662,0478 Y:327,7097 Z:82,08345
+v_ilev_cor_doorlift01 4280157649 X:-660,3802 Y:327,5638 Z:82,08345
+v_ilev_cor_doorlift01 4280219663 X:-665,0073 Y:327,9687 Z:82,08345
+v_ilev_cor_doorlift01 4280219843 X:-663,3427 Y:327,823 Z:82,08345
+v_ilev_cor_doorlift01 4280221645 X:-666,191 Y:328,0722 Z:82,08345
+v_ilev_cor_doorlift01 4280221445 X:-667,858 Y:328,2181 Z:82,08345
+v_ilev_cor_doorlift01 4280171495 X:-660,3792 Y:327,5556 Z:77,12252
+v_ilev_cor_doorlift01 4280207089 X:-663,3394 Y:327,8146 Z:77,12252
+v_ilev_cor_doorlift01 4280205820 X:-666,1902 Y:328,064 Z:77,12252
+v_ilev_cor_doorlift01 283600314 X:-667,8585 Y:328,21 Z:77,12252
+v_ilev_cor_doorlift01 283599536 X:-665,0071 Y:327,9605 Z:77,12252
+v_ilev_cor_doorlift01 283599862 X:-662,0465 Y:327,7015 Z:77,12252
+v_ilev_cor_doorlift01 4280157244 X:-660,3763 Y:327,5714 Z:87,01787
+v_ilev_cor_doorlift01 4280219950 X:-663,336 Y:327,8304 Z:87,01787
+v_ilev_cor_doorlift01 4280221219 X:-666,1886 Y:328,08 Z:87,01787
+v_ilev_cor_doorlift01 283597412 X:-667,8594 Y:328,2261 Z:87,01787
+v_ilev_cor_doorlift01 283598188 X:-665,0087 Y:327,9767 Z:87,01787
+v_ilev_cor_doorlift01 283597866 X:-662,0468 Y:327,7176 Z:87,01787
+v_ilev_cor_doorlift01 4280157713 X:-660,3788 Y:327,5575 Z:91,74303
+v_ilev_cor_doorlift01 4280220422 X:-663,3417 Y:327,8167 Z:91,74303
+v_ilev_cor_doorlift01 4280220682 X:-666,1927 Y:328,0662 Z:91,74303
+v_ilev_cor_doorlift01 283596876 X:-667,8576 Y:328,2118 Z:91,74303
+v_ilev_cor_doorlift01 283598662 X:-665,0086 Y:327,9626 Z:91,74303
+v_ilev_cor_doorlift01 283598336 X:-662,047 Y:327,7035 Z:91,74303
+v_ilev_cor_doorlift01 4280217345 X:-662,0466 Y:327,7042 Z:139,1243
+v_ilev_cor_doorlift01 4280161183 X:-660,3796 Y:327,5583 Z:139,1243
+v_ilev_cor_doorlift01 4280217224 X:-663,3418 Y:327,8174 Z:139,1243
+v_ilev_cor_doorlift01 4280215940 X:-666,1946 Y:328,067 Z:139,1243
+v_ilev_cor_doorlift01 4280217159 X:-665,006 Y:327,9631 Z:139,1243
+v_ilev_cor_doorlift01 4280215885 X:-667,8591 Y:328,2127 Z:139,1243
+v_ilev_cor_firedoor 770770604 X:-675,905 Y:327,8403 Z:78,13167
+v_ilev_cor_firedoor 770832778 X:-676,1055 Y:325,5489 Z:78,13167
+shmann_ehos_door03 2352370231 X:-657,0536 Y:323,8647 Z:139,1232
+shmann_ehos_door03 2352459195 X:-654,8111 Y:323,6685 Z:139,1232
+shmann_ehos_door03 2352370700 X:-673,3068 Y:325,2863 Z:139,1229
+shmann_ehos_door03 2352370881 X:-671,0649 Y:325,0901 Z:139,1229
+v_ilev_cor_firedoorwide2 3819498895 X:-673,0222 Y:320,7155 Z:92,77239
+v_ilev_cor_firedoorwide2 3819496255 X:-677,0573 Y:321,0685 Z:92,77239
+v_ilev_cd_door3 311682975 X:-671,8126 Y:340,9663 Z:83,23775
+v_ilev_cor_firedoorwide 2640985201 X:-672,3558 Y:335,3134 Z:83,10337
+shmann_ehos_door02 2117981749 X:-687,1222 Y:338,1085 Z:82,08088
+shmann_ehos_door02 2117981915 X:-684,4921 Y:337,8784 Z:82,08088
+v_ilev_cor_firedoorwide 2640983246 X:-684,5618 Y:346,8969 Z:83,10248
+v_ilev_cor_firedoorwide 2640982945 X:-686,1511 Y:347,0359 Z:83,10248
+v_ilev_cor_firedoorwide 2640982428 X:-691,5793 Y:347,0469 Z:83,10448
+v_ilev_cor_firedoorwide 2640982867 X:-692,1255 Y:340,8031 Z:83,10448
+shmann_ehos_door02 2117987797 X:-680,2816 Y:338,2533 Z:77,11596
+shmann_ehos_door02 2117988021 X:-682,9137 Y:338,4836 Z:77,11596
+shmann_ehos_door02 2117985486 X:-668,6794 Y:332,0345 Z:77,11596
+shmann_ehos_door02 2117985784 X:-666,0493 Y:331,8044 Z:77,11596
+v_ilev_cor_firedoor 770783623 X:-679,3394 Y:334,115 Z:88,04008
+v_ilev_cor_firedoor 770783927 X:-679,54 Y:331,8228 Z:88,04008
+v_ilev_cor_firedoorwide 2640982594 X:-677,7783 Y:329,5214 Z:88,04008
+v_ilev_cor_firedoorwide 2641022252 X:-677,9949 Y:327,0451 Z:88,04008
+v_ilev_cor_firedoorwide 2641022781 X:-678,3927 Y:322,4981 Z:88,04008
+v_ilev_cor_firedoorwide 2641022607 X:-678,3848 Y:318,1645 Z:88,04008
+v_ilev_cor_firedoorwide 2641019183 X:-673,826 Y:317,7657 Z:88,04008
+v_ilev_cor_firedoorwide 2641020077 X:-669,2888 Y:317,3687 Z:88,04008
+v_ilev_cor_firedoor 770715952 X:-651,9658 Y:321,9649 Z:88,03711
+v_ilev_cor_firedoor 770715711 X:-652,1666 Y:319,6705 Z:88,03711
+v_ilev_cor_firedoor 770716241 X:-651,7814 Y:324,0733 Z:88,03711
+v_ilev_cor_firedoor 770716582 X:-651,5808 Y:326,3659 Z:88,03711
+v_ilev_cor_firedoor 770782132 X:-656,4067 Y:331,6599 Z:88,02538
+v_ilev_cor_firedoor 770781872 X:-658,6953 Y:331,8601 Z:88,02538
+v_ilev_cor_firedoor 770781693 X:-660,6583 Y:332,0319 Z:88,02538
+v_ilev_cor_firedoor 770781548 X:-662,9497 Y:332,2323 Z:88,02538
+v_ilev_cor_firedoor 770782970 X:-669,0556 Y:332,7665 Z:88,02538
+v_ilev_cor_firedoor 770782835 X:-671,3463 Y:332,9669 Z:88,02538
+v_ilev_cor_firedoorwide 2640984066 X:-665,3282 Y:332,4405 Z:88,03893
+v_ilev_cor_firedoor 770784272 X:-681,3814 Y:333,3704 Z:92,7698
+v_ilev_cor_firedoor 770785127 X:-679,0846 Y:333,1695 Z:92,7698
+v_ilev_cor_firedoorwide 2640984826 X:-674,2787 Y:332,749 Z:92,7698
+ch_prop_ch_utility_door_01a 4077625487 X:-674,0691 Y:330,6281 Z:92,8988
+v_ilev_cor_firedoorwide2 3819509020 X:-649,5292 Y:323,9136 Z:92,76754
+v_ilev_cor_firedoorwide2 3819509617 X:-651,6691 Y:327,2052 Z:92,76754
+v_ilev_cor_firedoorwide2 3819509035 X:-646,7537 Y:326,7751 Z:92,76754
+v_ilev_cor_firedoorwide2 3819508379 X:-642,5621 Y:323,2892 Z:92,76754
+v_ilev_cor_firedoorwide2 3819508709 X:-641,809 Y:326,3425 Z:92,76754
+v_ilev_cor_firedoorwide2 3819508014 X:-637,7092 Y:322,8366 Z:92,76754
+v_ilev_cor_firedoorwide2 3819508132 X:-636,8864 Y:325,9119 Z:92,76754
+ch_prop_ch_utility_door_01a 4077542943 X:-637,0914 Y:328,0706 Z:92,89864
+ch_prop_ch_utility_door_01a 4077542514 X:-642,0018 Y:328,4989 Z:92,89864
+ch_prop_ch_utility_door_01a 4077541922 X:-646,9944 Y:328,9255 Z:92,89864
+ch_prop_ch_utility_door_01a 4077541607 X:-651,8904 Y:329,358 Z:92,89864
+ch_prop_ch_utility_door_01a 4077561578 X:-649,3401 Y:321,7188 Z:92,89864
+ch_prop_ch_utility_door_01a 4077560161 X:-642,3585 Y:321,1125 Z:92,89864
+ch_prop_ch_utility_door_01a 4077560482 X:-637,5031 Y:320,6795 Z:92,89864
+v_ilev_cor_firedoorwide 2641019331 X:-659,0488 Y:319,5009 Z:92,76675
+v_ilev_cor_firedoorwide 2641020008 X:-668,3838 Y:320,31 Z:92,76675
+v_ilev_cor_firedoorwide 2641020946 X:-676,9199 Y:317,7018 Z:92,76675
+v_ilev_cor_darkdoor 3920166686 X:-663,5561 Y:315,1993 Z:92,93722
+v_ilev_cor_darkdoor 3920165444 X:-670,9663 Y:315,8405 Z:92,93587
+
+
+Check out my discord:
+https://discord.gg/g2ednattNQ
+
+Best regards
