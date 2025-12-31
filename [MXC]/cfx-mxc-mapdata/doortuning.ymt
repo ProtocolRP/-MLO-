@@ -1599,8 +1599,40 @@
       </Item>
   <!-- MIRRORRESTAURANT -->  
     <Item>
-      <ModelName>mxc_venetian_prop_animtv</ModelName>
+      <ModelName>mxc_venetian_hroom_prop_animtv</ModelName>
       <TuningName>MxcMirrorAnimTV</TuningName>
+    </Item>
+    <Item>
+      <ModelName>mxc_venetian_prop_shuttergarage</ModelName>
+      <TuningName>MxcPitstopShutter</TuningName>
+    </Item>
+        <Item>
+      <ModelName>mxc_venetian_hroom_prop_bathdoor</ModelName>
+      <TuningName>NoRotationLimitStandardLatchShut</TuningName>
+    </Item>
+            <Item>
+      <ModelName>mxc_venetian_hroom_prop_entrancedoor</ModelName>
+      <TuningName>NoRotationLimitStandardLatchShut</TuningName>
+    </Item>
+            <Item>
+      <ModelName>mxc_venetian_hroom_prop_staffdoor</ModelName>
+      <TuningName>NoRotationLimitStandardLatchShut</TuningName>
+    </Item>
+      <Item>
+      <ModelName>mxc_venetian_hrestaurant_prop_colddoor</ModelName>
+      <TuningName>NoRotationLimitStandardLatchShut</TuningName>
+    </Item>
+      <Item>
+      <ModelName>mxc_venetian_hrestaurant_prop_kitchendoor</ModelName>
+      <TuningName>NoRotationLimitStandardLatchShut</TuningName>
+    </Item>
+      <Item>
+      <ModelName>mxc_venetian_hlobby_prop_entrancedoorl</ModelName>
+      <TuningName>NoRotationLimitStandardLatchShut</TuningName>
+    </Item>
+          <Item>
+      <ModelName>mxc_venetian_hlobby_prop_entrancedoorr</ModelName>
+      <TuningName>NoRotationLimitStandardLatchShut</TuningName>
     </Item>
   <!-- LIQUORSTORE -->
       <Item>
